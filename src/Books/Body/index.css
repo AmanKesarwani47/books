@@ -1,0 +1,78 @@
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.books-table th,
+.books-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.books-table th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.book-item td:last-child {
+  text-align: center;
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+.books__row {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px 10px 0px;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.books__row .button {
+  background-color: rgb(210, 49, 49);
+  transition: background-color 0.3s ease;
+}
+
+.books__row .button:hover {
+  background-color: #ef0d0dc1;
+}
+
+
+@media screen and (max-width: 767px) {
+  .books-table th,
+  .books-table td {
+    font-size: 12px;
+  }
+  .button {
+    font-size: 12px; 
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .books-table th,
+  .books-table td {
+    font-size: 14px;
+  }
+  .button {
+    font-size: 14px;
+  }
+}
+
